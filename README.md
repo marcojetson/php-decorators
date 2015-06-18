@@ -3,6 +3,8 @@ php-decorators
 
 Python-like decorators for PHP
 
+[![Build status](https://travis-ci.org/marcojetson/php-decorators.svg?branch=master)](https://travis-ci.org/marcojetson/php-decorators)
+
 Disclaimer
 ----------
 
