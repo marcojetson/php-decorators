@@ -8,7 +8,7 @@ Python-like decorators for PHP
 Disclaimer
 ----------
 
-Please note that this is a proof of concept, use at your own risk.
+Please note that this is a proof of concept, use it at your own risk.
 
 Usage
 -----
@@ -19,7 +19,7 @@ Specify decorators with the ```@Decorate``` annotation using one of the followin
 - Class name (must implement __invoke)
 - Function name
 
-Decorators takes the original method and the context as arguments and returns a function that takes the same arguments the original method do.
+Decorators take the original method and the context as arguments and must return a function that takes the same arguments the original method does.
 
 It's possible to add as many decorators as desired, always returning a valid callable for the next decorator.
 
