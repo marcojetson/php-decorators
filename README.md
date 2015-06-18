@@ -4,6 +4,7 @@ php-decorators
 Python-like decorators for PHP
 
 [![Build status](https://travis-ci.org/marcojetson/php-decorators.svg?branch=master)](https://travis-ci.org/marcojetson/php-decorators)
+[![Test coverage](https://codeclimate.com/github/marcojetson/php-decorators/badges/coverage.svg)](https://codeclimate.com/github/marcojetson/php-decorators/coverage)
 
 Disclaimer
 ----------
