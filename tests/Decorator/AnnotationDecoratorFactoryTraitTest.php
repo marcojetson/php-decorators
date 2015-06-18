@@ -17,11 +17,11 @@ class AnnotationDecoratorFactoryTraitTest extends \PHPUnit_Framework_TestCase
 
     public function testFactory()
     {
-        $this->assertInstanceOf('Decorator\AnnotationDecorator', static::factory());
+        $this->assertInstanceOf('Decorator\AnnotationDecorator', self::factory());
     }
 
     public function testFactoryArguments()
     {
-        $this->assertInstanceOf('Decorator\AnnotationDecorator', static::factory('name'));
+        $this->assertInstanceOf('Decorator\AnnotationDecorator', self::factory('name'));
     }
 }
