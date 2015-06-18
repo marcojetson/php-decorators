@@ -1,0 +1,21 @@
+language: php
+
+php:
+  - 5.4
+  - 7.0
+  - hhvm
+
+matrix:
+  allow_failures:
+    - php: 7.0
+    - php: hhvm
+
+before_script:
+  - composer self-update
+  - composer install -n
+
+script: vendor/bin/phpunit tests
+
+after_script:
+  - vendor/bin/test-reporter --stdout > codeclimate.json
+  - "curl -X POST -d @codeclimate.json -H 'Content-Type: application/json' -H 'User-Agent: Code Climate (PHP Test Reporter v0.1.1)' https://codeclimate.com/test_reports"
